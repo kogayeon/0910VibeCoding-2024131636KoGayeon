@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* <html data-lang="en">일 때만 적용되는 variant. LanguageToggle이 data-lang을 바꾼다. */
+@custom-variant en (&:where([data-lang="en"], [data-lang="en"] *));
+
+@theme inline {
+	--font-sans:
+		var(--font-geist-sans), "Apple SD Gothic Neo", "Malgun Gothic",
+		"Noto Sans KR", sans-serif;
+}

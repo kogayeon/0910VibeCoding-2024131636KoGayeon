@@ -1,0 +1,145 @@
+{
+	"links": [
+		{
+			"label": "GitHub",
+			"url": "https://github.com/kogayeon",
+			"text": "github.com/kogayeon"
+		},
+		{
+			"label": "LinkedIn",
+			"url": "https://www.linkedin.com/in/gayeon-ko-39a06336a",
+			"text": "linkedin.com/in/gayeon-ko-39a06336a"
+		},
+		{
+			"label": "Email",
+			"url": "mailto:ashley4141@korea.ac.kr",
+			"text": "ashley4141@korea.ac.kr"
+		}
+	],
+	"content": {
+		"ko": {
+			"languageName": "한국어",
+			"name": "고가연",
+			"affiliation": "고려대학교 언어학과 3학년",
+			"headline": "언어학과 컴퓨터과학을 잇는 AI · LLM을 공부합니다",
+			"bio": [
+				"안녕하세요, 고려대학교 언어학과 3학년 고가연입니다. NLP와 LLM, 그리고 AI와 언어학이 만나는 지점에 관심이 있습니다.",
+				"한국어 LLM 프로젝트에서 데이터를 정제하고, 학습자 코퍼스로 언어 현상을 분석하며 언어학적 분석과 computational approach를 연결하는 방법을 배우고 있습니다. 언어학과 컴퓨터과학을 접목한 AI/LLM 분야로 나아가는 것이 목표입니다."
+			],
+			"sections": {
+				"interests": "관심 분야",
+				"learning": "공부하고 있는 것",
+				"experience": "프로젝트 · 연구",
+				"hobbies": "취미",
+				"links": "링크"
+			},
+			"interests": {
+				"fields": ["NLP", "LLM", "AI × Linguistics"],
+				"learning": ["Python", "NLP 프로젝트", "CS 기초"]
+			},
+			"experiences": [
+				{
+					"title": "HuLLM",
+					"category": "프로젝트",
+					"summary": "한국어·한국문화 관련 LLM 프로젝트 참여",
+					"details": [
+						"한국어 QA 데이터 약 1,000건 규모의 데이터 정제(cleaning)",
+						"학습/평가 데이터의 품질을 검토하고 데이터 구성에 대한 의견 제안",
+						"NLP 및 LLM의 실제 데이터 구축 과정에 관심"
+					]
+				},
+				{
+					"title": "언어학 연구 · 학술 활동",
+					"category": "연구",
+					"summary": "PNC 관련 연구 프로젝트 참여",
+					"details": [
+						"영어 학습자 코퍼스를 활용한 복합어(hyphenated compounds) 연구",
+						"형태·통사적 기준을 활용한 데이터 분류 및 기술적 분석",
+						"국제 학술대회 발표 자료 제작 및 연구 발표 참여",
+						"코퍼스 데이터로 언어 현상을 정량적으로 살펴보고, 언어학적 분석과 computational approach를 연결하는 연구에 관심"
+					]
+				}
+			],
+			"hobbies": [
+				{
+					"emoji": "📷",
+					"name": "사진",
+					"details": [
+						"여행 및 일상 풍경 촬영",
+						"Lumix LX100 II / iPhone으로 촬영",
+						"과도한 색보정이나 필터보다는 자연스러운 사진을 선호"
+					]
+				},
+				{ "emoji": "🎧", "name": "K-POP 듣기", "details": [] },
+				{ "emoji": "⛸️", "name": "피겨 / 스케이팅", "details": [] },
+				{
+					"emoji": "✈️",
+					"name": "여행 및 새로운 장소 탐방",
+					"details": []
+				}
+			]
+		},
+		"en": {
+			"languageName": "English",
+			"name": "Gayeon Ko",
+			"affiliation": "Linguistics, Korea University · 3rd year",
+			"headline": "Studying AI and LLMs at the intersection of linguistics and computer science",
+			"bio": [
+				"Hi, I'm Gayeon Ko, a third-year Linguistics student at Korea University. I'm interested in NLP, LLMs, and where AI meets linguistics.",
+				"By cleaning data for a Korean LLM project and analyzing language with a learner corpus, I'm learning how to connect linguistic analysis with computational approaches. My goal is a career in AI/LLM that brings linguistics and computer science together."
+			],
+			"sections": {
+				"interests": "Interests",
+				"learning": "Currently learning",
+				"experience": "Projects & Research",
+				"hobbies": "Hobbies",
+				"links": "Links"
+			},
+			"interests": {
+				"fields": ["NLP", "LLM", "AI × Linguistics"],
+				"learning": ["Python", "NLP projects", "CS fundamentals"]
+			},
+			"experiences": [
+				{
+					"title": "HuLLM",
+					"category": "Project",
+					"summary": "An LLM project focused on the Korean language and culture",
+					"details": [
+						"Cleaned a Korean QA dataset of about 1,000 items",
+						"Reviewed the quality of training and evaluation data and suggested how to organize it",
+						"Interested in how real-world data for NLP and LLMs is built"
+					]
+				},
+				{
+					"title": "Linguistics Research & Academic Activities",
+					"category": "Research",
+					"summary": "Took part in a PNC-related research project",
+					"details": [
+						"Studied hyphenated compounds using an English learner corpus",
+						"Classified data and carried out descriptive analysis using morphological and syntactic criteria",
+						"Prepared materials for and presented research at an international academic conference",
+						"Interested in examining language quantitatively with corpus data and in connecting linguistic analysis with computational approaches"
+					]
+				}
+			],
+			"hobbies": [
+				{
+					"emoji": "📷",
+					"name": "Photography",
+					"details": [
+						"Travel and everyday scenes",
+						"Shooting with a Lumix LX100 II and an iPhone",
+						"Prefer natural-looking photos over heavy color grading or filters"
+					]
+				},
+				{ "emoji": "🎧", "name": "Listening to K-pop", "details": [] },
+				{ "emoji": "⛸️", "name": "Figure skating", "details": [] },
+				{
+					"emoji": "✈️",
+					"name": "Traveling and exploring new places",
+					"details": []
+				}
+			]
+		}
+	}
+}
