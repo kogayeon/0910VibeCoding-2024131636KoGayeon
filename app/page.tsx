@@ -9,9 +9,9 @@ export default function Home() {
 	const { ko, en } = profile.content;
 
 	return (
-		<main className="mx-auto w-full max-w-6xl px-5 pb-16 sm:px-8">
-			<div className="flex items-center justify-between border-b border-current py-3 text-[11px] tracking-[0.25em] uppercase">
-				<p>
+		<main className="mx-auto w-full max-w-[1128px] px-6 pt-8 pb-16">
+			<div className="flex flex-wrap items-center justify-between gap-4 border-b border-rule pb-3.5">
+				<p className="text-[11px] font-semibold tracking-[0.16em] text-muted uppercase">
 					<span lang="ko" className="en:hidden">
 						{ko.issue}
 					</span>
@@ -28,7 +28,7 @@ export default function Home() {
 			</div>
 			<p
 				aria-hidden="true"
-				className="py-4 text-center font-display [font-optical-sizing:auto] text-[clamp(4.5rem,21vw,15rem)] leading-[0.85] font-medium tracking-tight sm:py-6"
+				className="mt-7 mb-2 font-latin text-[clamp(56px,15.5vw,210px)] leading-[0.9] font-bold tracking-[-0.02em]"
 			>
 				{profile.masthead}
 			</p>

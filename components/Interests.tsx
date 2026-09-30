@@ -7,42 +7,33 @@ type Props = {
 
 export default function Interests({ interests, learningTitle }: Props) {
 	return (
-		<div className="space-y-10">
-			<ul className="flex flex-wrap items-baseline gap-x-4 gap-y-2 font-display text-4xl leading-tight sm:text-6xl">
+		<>
+			<ul className="flex flex-wrap items-baseline gap-x-[18px] gap-y-2.5 font-display text-[clamp(24px,3.2vw,40px)] leading-[1.3] font-medium tracking-[-0.015em]">
 				{interests.fields.map((field, index) => (
-					<li key={field} className="flex items-baseline gap-4">
-						{index > 0 && (
+					<li
+						key={field}
+						className="inline-flex items-baseline gap-[18px]"
+					>
+						<span>{field}</span>
+						{index < interests.fields.length - 1 && (
 							<span
 								aria-hidden="true"
-								className="font-normal text-neutral-400"
+								className="font-normal text-lavender-sep"
 							>
 								/
 							</span>
 						)}
-						<span className="en:italic">{field}</span>
 					</li>
 				))}
 			</ul>
-			<div className="flex flex-col gap-3 border-t border-neutral-300 pt-4 sm:flex-row sm:gap-8 dark:border-neutral-700">
-				<h3 className="shrink-0 text-[11px] tracking-[0.3em] uppercase">
+			<div className="mt-[26px] flex flex-wrap items-center gap-x-4 gap-y-2.5 rounded-2xl bg-lavender-soft px-5 py-4">
+				<h3 className="text-[11px] font-semibold tracking-[0.16em] text-plum uppercase">
 					{learningTitle}
 				</h3>
-				<ul className="flex flex-wrap gap-x-3 text-sm text-neutral-700 dark:text-neutral-300">
-					{interests.learning.map((item, index) => (
-						<li key={item}>
-							{index > 0 && (
-								<span
-									aria-hidden="true"
-									className="mr-3 text-neutral-400"
-								>
-									·
-								</span>
-							)}
-							{item}
-						</li>
-					))}
-				</ul>
+				<p className="text-base text-body">
+					{interests.learning.join(" · ")}
+				</p>
 			</div>
-		</div>
+		</>
 	);
 }

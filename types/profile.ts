@@ -16,7 +16,6 @@ export type Experience = {
 export type Hobby = {
 	emoji: string;
 	name: string;
-	details: string[];
 };
 
 export type LocalizedContent = {
@@ -24,6 +23,7 @@ export type LocalizedContent = {
 	issue: string;
 	name: string;
 	affiliation: string;
+	tags: string[];
 	headline: string;
 	bio: string[];
 	sections: {

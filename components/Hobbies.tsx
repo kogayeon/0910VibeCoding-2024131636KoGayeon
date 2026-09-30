@@ -6,22 +6,18 @@ type Props = {
 
 export default function Hobbies({ hobbies }: Props) {
 	return (
-		<ul className="grid border-t border-neutral-300 sm:grid-cols-2 dark:border-neutral-700">
-			{hobbies.map((hobby) => (
+		<ul className="flex flex-wrap gap-3.5">
+			{hobbies.map((hobby, index) => (
 				<li
 					key={hobby.name}
-					className="border-b border-neutral-300 py-6 sm:odd:border-r sm:odd:pr-8 sm:even:pl-8 dark:border-neutral-700"
+					className="flex min-w-[180px] flex-auto items-center gap-3.5 rounded-full bg-peach-soft px-7 py-[22px]"
 				>
-					<p className="font-display text-2xl sm:text-3xl en:italic">
+					<span className="font-latin text-[11px] font-bold tracking-[0.16em] text-peach-ink tabular-nums">
+						{String(index + 1).padStart(2, "0")}
+					</span>
+					<h3 className="font-display text-[clamp(18px,2vw,23px)] leading-[1.4] font-bold tracking-[-0.01em]">
 						{hobby.name}
-					</p>
-					{hobby.details.length > 0 && (
-						<ul className="mt-3 space-y-1 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-							{hobby.details.map((detail) => (
-								<li key={detail}>{detail}</li>
-							))}
-						</ul>
-					)}
+					</h3>
 				</li>
 			))}
 		</ul>

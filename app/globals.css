@@ -4,10 +4,41 @@
 @custom-variant en (&:where([data-lang="en"], [data-lang="en"] *));
 
 @theme inline {
-	--font-sans:
-		var(--font-geist-sans), "Apple SD Gothic Neo", "Malgun Gothic",
-		sans-serif;
-	/* 라틴 글자는 Bodoni Moda, 한글은 Noto Serif KR로 떨어진다. */
-	--font-display:
-		var(--font-bodoni), var(--font-noto-serif-kr), "Times New Roman", serif;
+	/* 본문·라벨: 라틴은 Archivo, 한글은 Noto Sans KR로 떨어진다. */
+	--font-sans: var(--font-archivo), var(--font-noto-sans-kr), sans-serif;
+	/* 이름·제목·인용문: 한글 고딕을 앞세운다. */
+	--font-display: var(--font-noto-sans-kr), var(--font-archivo), sans-serif;
+	/* 마스트헤드·번호: 라틴 전용. */
+	--font-latin: var(--font-archivo), sans-serif;
+}
+
+/* 크림 배경 + 라벤더·민트·피치·버터 네 가지 파스텔. 섹션마다 한 색을 쓴다. */
+@theme {
+	--color-paper: #fbf9f5;
+	--color-ink: #2a2630;
+	--color-body: #4a4550;
+	--color-muted: #8a8394;
+	--color-rule: #e6e1da;
+	--color-plum: #6e5ba6;
+	--color-chip: #f1ede5;
+
+	--color-lavender: #e7e0f7;
+	--color-lavender-soft: #f3eff9;
+	--color-lavender-sep: #c9bfd9;
+
+	--color-mint: #d8ede4;
+	--color-mint-soft: #eef7f3;
+	--color-mint-num: #bcdbce;
+	--color-mint-rule: #d5e8df;
+	--color-mint-ink: #3f7a66;
+	--color-mint-body: #43554d;
+
+	--color-peach: #fbe0d3;
+	--color-peach-soft: #fdf1ea;
+	--color-peach-accent: #f7cbb4;
+	--color-peach-ink: #c98a69;
+
+	--color-butter: #f7ecc9;
+	--color-butter-soft: #fdf7e6;
+	--color-butter-ink: #9a8449;
 }

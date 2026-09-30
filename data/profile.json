@@ -20,9 +20,10 @@
 	"content": {
 		"ko": {
 			"languageName": "한국어",
-			"issue": "2026 가을호 · 창간호",
+			"issue": "2026",
 			"name": "고가연",
 			"affiliation": "고려대학교 언어학과 3학년",
+			"tags": ["언어학", "자연어처리"],
 			"headline": "언어학과 컴퓨터과학을 잇는 AI · LLM을 공부합니다",
 			"bio": [
 				"안녕하세요, 고려대학교 언어학과 3학년 고가연입니다. NLP와 LLM, 그리고 AI와 언어학이 만나는 지점에 관심이 있습니다.",
@@ -65,36 +66,29 @@
 			"hobbies": [
 				{
 					"emoji": "📷",
-					"name": "사진",
-					"details": [
-						"여행 및 일상 풍경 촬영",
-						"Lumix LX100 II / iPhone으로 촬영",
-						"과도한 색보정이나 필터보다는 자연스러운 사진을 선호"
-					]
+					"name": "사진"
 				},
 				{
 					"emoji": "🎧",
-					"name": "K-POP 듣기",
-					"details": []
+					"name": "K-POP 듣기"
 				},
 				{
 					"emoji": "⛸️",
-					"name": "피겨 / 스케이팅",
-					"details": []
+					"name": "피겨 / 스케이팅"
 				},
 				{
 					"emoji": "✈️",
-					"name": "여행 및 새로운 장소 탐방",
-					"details": []
+					"name": "여행 및 새로운 장소 탐방"
 				}
 			],
 			"colophon": "글 · 고가연"
 		},
 		"en": {
 			"languageName": "English",
-			"issue": "Autumn 2026 · Issue No. 01",
+			"issue": "2026",
 			"name": "Gayeon Ko",
 			"affiliation": "Linguistics, Korea University · 3rd year",
+			"tags": ["Linguistics", "NLP"],
 			"headline": "Studying AI and LLMs at the intersection of linguistics and computer science",
 			"bio": [
 				"Hi, I'm Gayeon Ko, a third-year Linguistics student at Korea University. I'm interested in NLP, LLMs, and where AI meets linguistics.",
@@ -137,27 +131,19 @@
 			"hobbies": [
 				{
 					"emoji": "📷",
-					"name": "Photography",
-					"details": [
-						"Travel and everyday scenes",
-						"Shooting with a Lumix LX100 II and an iPhone",
-						"Prefer natural-looking photos over heavy color grading or filters"
-					]
+					"name": "Photography"
 				},
 				{
 					"emoji": "🎧",
-					"name": "Listening to K-pop",
-					"details": []
+					"name": "Listening to K-pop"
 				},
 				{
 					"emoji": "⛸️",
-					"name": "Figure skating",
-					"details": []
+					"name": "Figure skating"
 				},
 				{
 					"emoji": "✈️",
-					"name": "Traveling and exploring new places",
-					"details": []
+					"name": "Traveling and exploring new places"
 				}
 			],
 			"colophon": "Words by Gayeon Ko"

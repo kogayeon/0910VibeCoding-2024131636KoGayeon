@@ -17,7 +17,7 @@ export default function LanguageToggle({ options }: Props) {
 	}, [current]);
 
 	return (
-		<div className="flex gap-4">
+		<div className="flex gap-2">
 			{options.map(({ lang, label }) => (
 				<button
 					key={lang}
@@ -25,7 +25,7 @@ export default function LanguageToggle({ options }: Props) {
 					lang={lang}
 					aria-pressed={current === lang}
 					onClick={() => setCurrent(lang)}
-					className="tracking-[0.25em] text-neutral-400 uppercase decoration-1 underline-offset-4 transition-colors hover:text-current aria-pressed:text-current aria-pressed:underline"
+					className="cursor-pointer rounded-full bg-chip px-3.5 py-2 text-[11px] leading-[1.7] font-bold tracking-[0.14em] text-muted uppercase transition-colors duration-160 aria-pressed:bg-plum aria-pressed:text-white"
 				>
 					{label}
 				</button>

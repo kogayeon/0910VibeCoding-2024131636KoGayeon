@@ -6,29 +6,29 @@ type Props = {
 
 export default function Links({ links }: Props) {
 	return (
-		<ul className="border-t border-current">
+		<ul className="flex flex-col gap-2.5">
 			{links.map((link) => {
 				const isExternal = link.url.startsWith("http");
 
 				return (
-					<li key={link.url} className="border-b border-current">
+					<li key={link.url}>
 						<a
 							href={link.url}
 							{...(isExternal && {
 								target: "_blank",
 								rel: "noopener noreferrer",
 							})}
-							className="group flex flex-col gap-1 py-5 sm:flex-row sm:items-baseline sm:gap-8"
+							className="grid grid-cols-[96px_1fr_auto] items-center gap-4 rounded-2xl bg-butter-soft px-[22px] py-[18px] transition duration-160 hover:translate-x-1 hover:bg-butter hover:text-plum"
 						>
-							<span className="w-32 shrink-0 text-[11px] tracking-[0.3em] uppercase">
+							<span className="text-[11px] font-bold tracking-[0.16em] text-butter-ink uppercase">
 								{link.label}
 							</span>
-							<span className="flex-1 font-display text-xl break-all group-hover:italic sm:text-3xl">
+							<span className="text-[clamp(17px,2.2vw,24px)] font-semibold tracking-[-0.01em] wrap-anywhere">
 								{link.text}
 							</span>
 							<span
 								aria-hidden="true"
-								className="hidden font-display text-3xl transition-transform group-hover:translate-x-1 sm:inline"
+								className="text-xl text-butter-ink"
 							>
 								→
 							</span>

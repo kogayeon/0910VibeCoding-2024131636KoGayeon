@@ -19,25 +19,37 @@ export default function ProfileView({ content, links }: Props) {
 			<Intro
 				name={content.name}
 				affiliation={content.affiliation}
+				tags={content.tags}
 				headline={content.headline}
 				bio={content.bio}
 			/>
-			<Section number={1} title={sections.interests}>
+			<Section
+				number={1}
+				title={sections.interests}
+				accent="lavender"
+				titleGap="mb-6"
+			>
 				<Interests
 					interests={content.interests}
 					learningTitle={sections.learning}
 				/>
 			</Section>
-			<Section number={2} title={sections.experience}>
+			<Section number={2} title={sections.experience} accent="mint">
 				<Experience experiences={content.experiences} />
 			</Section>
-			<Section number={3} title={sections.hobbies}>
+			<Section number={3} title={sections.hobbies} accent="peach">
 				<Hobbies hobbies={content.hobbies} />
 			</Section>
-			<Section number={4} title={sections.links}>
+			<Section
+				number={4}
+				title={sections.links}
+				accent="butter"
+				titleGap="mb-5"
+				className="pt-11 pb-2"
+			>
 				<Links links={links} />
 			</Section>
-			<footer className="mt-20 border-t border-current pt-4 text-center text-[11px] tracking-[0.3em] uppercase">
+			<footer className="mt-10 border-t border-rule pt-[18px] text-center text-[11px] font-semibold tracking-[0.18em] text-muted uppercase">
 				{content.colophon}
 			</footer>
 		</>
