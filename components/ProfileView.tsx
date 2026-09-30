@@ -22,21 +22,24 @@ export default function ProfileView({ content, links }: Props) {
 				headline={content.headline}
 				bio={content.bio}
 			/>
-			<Section title={sections.interests}>
+			<Section number={1} title={sections.interests}>
 				<Interests
 					interests={content.interests}
 					learningTitle={sections.learning}
 				/>
 			</Section>
-			<Section title={sections.experience}>
+			<Section number={2} title={sections.experience}>
 				<Experience experiences={content.experiences} />
 			</Section>
-			<Section title={sections.hobbies}>
+			<Section number={3} title={sections.hobbies}>
 				<Hobbies hobbies={content.hobbies} />
 			</Section>
-			<Section title={sections.links}>
+			<Section number={4} title={sections.links}>
 				<Links links={links} />
 			</Section>
+			<footer className="mt-20 border-t border-current pt-4 text-center text-[11px] tracking-[0.3em] uppercase">
+				{content.colophon}
+			</footer>
 		</>
 	);
 }

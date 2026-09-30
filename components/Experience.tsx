@@ -6,28 +6,43 @@ type Props = {
 
 export default function Experience({ experiences }: Props) {
 	return (
-		<ul className="space-y-4">
-			{experiences.map((experience) => (
-				<li
+		<div className="space-y-16">
+			{experiences.map((experience, index) => (
+				<article
 					key={experience.title}
-					className="rounded-xl border border-stone-200 p-5 dark:border-stone-800"
+					className="grid gap-6 md:grid-cols-12 md:gap-8"
 				>
-					<p className="text-xs font-medium text-stone-500 dark:text-stone-400">
-						{experience.category}
-					</p>
-					<h3 className="mt-1 text-lg font-semibold text-stone-900 dark:text-stone-50">
-						{experience.title}
-					</h3>
-					<p className="mt-1 text-stone-600 dark:text-stone-300">
-						{experience.summary}
-					</p>
-					<ul className="mt-4 list-disc space-y-1.5 pl-5 text-sm leading-6 text-stone-600 marker:text-stone-400 dark:text-stone-300 dark:marker:text-stone-600">
-						{experience.details.map((detail) => (
-							<li key={detail}>{detail}</li>
-						))}
-					</ul>
-				</li>
+					<div className="md:col-span-4">
+						<p className="text-[11px] tracking-[0.3em] uppercase">
+							{experience.category}
+						</p>
+						<p
+							aria-hidden="true"
+							className="mt-2 font-display text-7xl leading-none text-neutral-300 tabular-nums dark:text-neutral-700"
+						>
+							{String(index + 1).padStart(2, "0")}
+						</p>
+					</div>
+					<div className="md:col-span-8">
+						<h3 className="font-display text-3xl leading-tight font-bold sm:text-4xl en:font-medium">
+							{experience.title}
+						</h3>
+						<p className="mt-3 font-display text-lg text-neutral-600 sm:text-xl dark:text-neutral-400 en:italic">
+							{experience.summary}
+						</p>
+						<ul className="mt-6 border-t border-neutral-300 dark:border-neutral-700">
+							{experience.details.map((detail) => (
+								<li
+									key={detail}
+									className="border-b border-neutral-300 py-3 text-sm leading-6 text-neutral-700 dark:border-neutral-700 dark:text-neutral-300"
+								>
+									{detail}
+								</li>
+							))}
+						</ul>
+					</div>
+				</article>
 			))}
-		</ul>
+		</div>
 	);
 }

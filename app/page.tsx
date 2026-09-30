@@ -9,8 +9,16 @@ export default function Home() {
 	const { ko, en } = profile.content;
 
 	return (
-		<main className="mx-auto w-full max-w-2xl px-5 py-10 sm:py-16">
-			<div className="flex justify-end">
+		<main className="mx-auto w-full max-w-6xl px-5 pb-16 sm:px-8">
+			<div className="flex items-center justify-between border-b border-current py-3 text-[11px] tracking-[0.25em] uppercase">
+				<p>
+					<span lang="ko" className="en:hidden">
+						{ko.issue}
+					</span>
+					<span lang="en" className="hidden en:inline">
+						{en.issue}
+					</span>
+				</p>
 				<LanguageToggle
 					options={[
 						{ lang: "ko", label: ko.languageName },
@@ -18,6 +26,12 @@ export default function Home() {
 					]}
 				/>
 			</div>
+			<p
+				aria-hidden="true"
+				className="py-4 text-center font-display [font-optical-sizing:auto] text-[clamp(4.5rem,21vw,15rem)] leading-[0.85] font-medium tracking-tight sm:py-6"
+			>
+				{profile.masthead}
+			</p>
 			<div lang="ko" className="en:hidden">
 				<ProfileView content={ko} links={profile.links} />
 			</div>

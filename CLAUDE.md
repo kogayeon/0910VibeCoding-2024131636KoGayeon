@@ -69,12 +69,14 @@ types/
 
 ```jsonc
 {
+	"masthead": "GAYEON",
 	"links": [
 		{ "label": "GitHub", "url": "https://…", "text": "github.com/…" },
 	],
 	"content": {
 		"ko": {
 			"languageName": "한국어",
+			"issue": "…",
 			"name": "…",
 			"affiliation": "…",
 			"headline": "…",
@@ -96,6 +98,7 @@ types/
 				},
 			],
 			"hobbies": [{ "emoji": "📷", "name": "…", "details": ["…"] }],
+			"colophon": "…",
 		},
 		"en": {
 			/* ko와 같은 모양 */
@@ -103,6 +106,18 @@ types/
 	},
 }
 ```
+
+## 디자인: 패션 매거진(Vogue) 에디토리얼
+
+- 흑백만 쓴다. 회색(`neutral-*`)은 보조 텍스트와 얇은 구분선에만 쓰고, 색상 강조는 넣지 않는다. 다크 모드는 흑백을 뒤집는다.
+- 서체
+    - `font-display`: 제목·인용·링크용 세리프. 라틴 글자는 Bodoni Moda, 한글은 Noto Serif KR로 떨어진다.
+    - `font-sans`: 본문. 작은 라벨은 `text-[11px] uppercase tracking-[0.3em]`.
+- 이탤릭은 영어에만 `en:italic`으로 준다. Noto Serif KR에는 이탤릭이 없어 한글이 가짜 기울임으로 깨진다.
+- Bodoni의 고대비 광학 크기(`opsz`)는 마스트헤드에만 켠다(`[font-optical-sizing:auto]`). 다른 곳에서 켜면 하이픈과 가는 획이 사라진다. `body`는 `[font-optical-sizing:none]`.
+- 구성 요소: 상단 호수(issue) 줄 → 큰 마스트헤드 → 커버(이름 + 인용문 헤드라인 + 드롭캡 본문) → "No. 01" 번호가 붙은 섹션 → 콜로폰.
+- 둥근 모서리, 그림자, 알약 모양 배지는 쓰지 않는다. 구분은 가는 선과 여백으로 한다.
+- 취미의 `emoji` 값은 데이터에만 두고 화면에는 표시하지 않는다.
 
 ## 코드 규칙
 

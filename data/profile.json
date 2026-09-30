@@ -1,4 +1,5 @@
 {
+	"masthead": "GAYEON",
 	"links": [
 		{
 			"label": "GitHub",
@@ -19,6 +20,7 @@
 	"content": {
 		"ko": {
 			"languageName": "한국어",
+			"issue": "2026 가을호 · 창간호",
 			"name": "고가연",
 			"affiliation": "고려대학교 언어학과 3학년",
 			"headline": "언어학과 컴퓨터과학을 잇는 AI · LLM을 공부합니다",
@@ -70,17 +72,27 @@
 						"과도한 색보정이나 필터보다는 자연스러운 사진을 선호"
 					]
 				},
-				{ "emoji": "🎧", "name": "K-POP 듣기", "details": [] },
-				{ "emoji": "⛸️", "name": "피겨 / 스케이팅", "details": [] },
+				{
+					"emoji": "🎧",
+					"name": "K-POP 듣기",
+					"details": []
+				},
+				{
+					"emoji": "⛸️",
+					"name": "피겨 / 스케이팅",
+					"details": []
+				},
 				{
 					"emoji": "✈️",
 					"name": "여행 및 새로운 장소 탐방",
 					"details": []
 				}
-			]
+			],
+			"colophon": "글 · 고가연"
 		},
 		"en": {
 			"languageName": "English",
+			"issue": "Autumn 2026 · Issue No. 01",
 			"name": "Gayeon Ko",
 			"affiliation": "Linguistics, Korea University · 3rd year",
 			"headline": "Studying AI and LLMs at the intersection of linguistics and computer science",
@@ -132,14 +144,23 @@
 						"Prefer natural-looking photos over heavy color grading or filters"
 					]
 				},
-				{ "emoji": "🎧", "name": "Listening to K-pop", "details": [] },
-				{ "emoji": "⛸️", "name": "Figure skating", "details": [] },
+				{
+					"emoji": "🎧",
+					"name": "Listening to K-pop",
+					"details": []
+				},
+				{
+					"emoji": "⛸️",
+					"name": "Figure skating",
+					"details": []
+				},
 				{
 					"emoji": "✈️",
 					"name": "Traveling and exploring new places",
 					"details": []
 				}
-			]
+			],
+			"colophon": "Words by Gayeon Ko"
 		}
 	}
 }

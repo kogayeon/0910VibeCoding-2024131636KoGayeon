@@ -21,6 +21,7 @@ export type Hobby = {
 
 export type LocalizedContent = {
 	languageName: string;
+	issue: string;
 	name: string;
 	affiliation: string;
 	headline: string;
@@ -38,9 +39,11 @@ export type LocalizedContent = {
 	};
 	experiences: Experience[];
 	hobbies: Hobby[];
+	colophon: string;
 };
 
 export type Profile = {
+	masthead: string;
 	links: ProfileLink[];
 	content: Record<Language, LocalizedContent>;
 };

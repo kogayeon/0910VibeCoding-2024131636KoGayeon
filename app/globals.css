@@ -6,5 +6,8 @@
 @theme inline {
 	--font-sans:
 		var(--font-geist-sans), "Apple SD Gothic Neo", "Malgun Gothic",
-		"Noto Sans KR", sans-serif;
+		sans-serif;
+	/* 라틴 글자는 Bodoni Moda, 한글은 Noto Serif KR로 떨어진다. */
+	--font-display:
+		var(--font-bodoni), var(--font-noto-serif-kr), "Times New Roman", serif;
 }
